@@ -1,0 +1,28 @@
+.services{
+    padding:100px 90px;
+
+    background:#F8FAFC;
+}
+.services h2{
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+    color:#0F172A;
+}
+.services-container{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+}
+@media (max-width: 768px){
+    .services-container{
+        grid-template-columns:1fr;
+    }
+}

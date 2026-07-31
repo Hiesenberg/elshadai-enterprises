@@ -1,0 +1,115 @@
+nav{
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 20px;
+
+}
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+background-color: var(--primary);
+color: var(--secondary);
+ padding: 14px 70px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+
+}
+.logo h2{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+
+}
+.nav-links li {
+    cursor: pointer;
+    transition: 0.3s ;
+    font-weight: 500;
+position: relative;
+}
+
+.nav-links li a{
+    color: inherit;
+    text-decoration: none;
+}
+.navbar > a{
+    text-decoration: none;
+}
+
+.nav-links li:hover{
+    color: var(--accent);
+}
+
+.book-btn{
+    background-color: var(--accent);
+    color: var(--primary);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ;
+}
+
+.book-btn:hover{
+    transform: translateY(-3px);
+    box-shadow:0 10px 20px rgba(255,215,0,.35);
+}
+
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-icon{
+    width: 46px;
+    height:46px;
+
+    background:linear-gradient(135deg,#FFD700,#F4B400);
+
+    color:#0F172A;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:24px;
+    font-weight:bold;
+}
+
+.logo-text h2{
+    font-size:24px;
+    margin:0;
+}
+
+.logo-text span{
+    font-size:12px;
+    letter-spacing:3px;
+    color:#cbd5e1;
+}
+.nav-links li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0%;
+    height: 2px;
+
+    background: var(--accent);
+
+    transition: 0.3s;
+}
+
+.nav-links li:hover::after{
+    width:100%;
+}
