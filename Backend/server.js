@@ -32,9 +32,25 @@ mongoose
 
 // Middleware
 app.use(helmet());
+// CORS: allow the configured frontend + this project's Vercel preview/edge URLs
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: (origin, callback) => {
+      if (!origin) return callback(null, true); // server-to-server (curl/Postman)
+
+      const allowedOrigin = process.env.CLIENT_URL || "http://localhost:5173";
+      if (origin === allowedOrigin) return callback(null, true);
+
+      const projectName = allowedOrigin.split(".")[0].split("://").pop();
+      if (
+        origin.startsWith(`https://${projectName}-`) &&
+        origin.endsWith(".vercel.app")
+      ) {
+        return callback(null, true); // Vercel preview deployments
+      }
+
+      return callback(null, false);
+    },
   })
 );
 app.use(express.json({ limit: "10kb" }));
