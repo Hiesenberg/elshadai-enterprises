@@ -14,6 +14,9 @@ const bcrypt = require("bcryptjs");
 
 const app = express();
 
+// Trust the first proxy hop (Render/Heroku) so rate limiting sees real client IPs
+app.set("trust proxy", 1);
+
 // Connect to MongoDB
 mongoose
   .connect(process.env.MONGODB_URI)
