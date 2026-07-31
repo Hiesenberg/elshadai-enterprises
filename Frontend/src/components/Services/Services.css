@@ -22,7 +22,14 @@
     margin-top:60px;
 }
 @media (max-width: 768px){
+    .services{
+        padding:60px 20px;
+    }
+    .services h2{
+        font-size:30px;
+    }
     .services-container{
         grid-template-columns:1fr;
+        margin-top:40px;
     }
 }
