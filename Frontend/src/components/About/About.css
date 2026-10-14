@@ -2,7 +2,7 @@
     display: flex;
     gap: 60px;
     align-items: center;
-    padding: 100px 90px;
+    padding: 95px 90px 105px;
 }
 @media (max-width: 768px){
     .about-container{

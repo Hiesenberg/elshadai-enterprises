@@ -9,7 +9,7 @@ function Footer() {
                 <div className="footer-about">
                     <h2>Elshadai Enterprises</h2>
                     <p>
-                        Professional home maintenance services across Bangalore.
+                        Professional home maintenance across India.
                     </p>
                 </div>
 
@@ -30,15 +30,16 @@ function Footer() {
                         <li>Electrical</li>
                         <li>Painting</li>
                         <li>Welding</li>
-                        <li>General Repair</li>
+                        <li>Plumbing</li>
+                        <li>Decorative Finishes</li>
                     </ul>
                 </div>
 
                 <div className="footer-contact">
                     <h3>Contact</h3>
-                    <p><FaPhone /> +91 98765 43210</p>
-                    <p><FaEnvelope /> elshadaienterprises@gmail.com</p>
-                    <p><FaMapMarkerAlt /> Bangalore, Karnataka</p>
+                    <p><FaPhone /> +91 8088618213</p>
+                    <p><FaEnvelope /> rahulramya45@gmail.com</p>
+                    <p><FaMapMarkerAlt /> Serving All Over India</p>
                 </div>
 
             </div>

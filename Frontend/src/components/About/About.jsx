@@ -5,11 +5,11 @@ import "./About.css";
 
 function About() {
   const highlights = [
-    "15+ Years of Experience",
-    "Quality Workmanship",
-    "Affordable Pricing",
-    "On-Time Service",
-    "Customer Satisfaction",
+    "Trusted by customers across India",
+    "Quality work, every time",
+    "Fair, transparent pricing",
+    "We show up when we say we will",
+    "Your satisfaction matters to us",
   ];
 
   return (
@@ -19,12 +19,12 @@ function About() {
           <img src={aboutimage} alt="About Us" />
         </div>
         <div className="about-content">
-          <h2>About Elshadai Enterprises</h2>
+          <h2>About Us</h2>
           <p>
-            Elshadai Enterprises is a trusted home maintenance company serving
-            Bangalore for over 15 years. From carpentry and electrical repairs
-            to painting and welding, our certified professionals deliver
-            reliable, affordable, and on-time service for every job.
+            We fix homes across India — from Bangalore to Mumbai, Chennai to Delhi.
+            Whether it's carpentry, electrical work, plumbing, painting, or welding,
+            we handle it all. Our team shows up on time, does the job right,
+            and charges you fairly. No hassle, just honest work.
           </p>
           <div className="about-highlights">
             <ul>

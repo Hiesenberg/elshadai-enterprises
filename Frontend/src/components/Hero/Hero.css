@@ -84,7 +84,7 @@
 }
 .primary-btn{
     background-color:var(--accent);
-    color:var(--primary);
+    color:#0F172A;
   display:flex;
     align-items:center;
     gap:10px;

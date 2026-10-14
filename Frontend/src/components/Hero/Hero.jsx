@@ -6,13 +6,13 @@ function Hero() {
     <section id="home" className="hero">
       <div className="hero-content">
         <h1>
-          Reliable Home
+          Home Repairs
           <br />
-          Maintenance <span>Services</span>
+          You Can <span>Trust</span>
         </h1>
         <p>
-          Professional <span>Carpentry</span>, Plumbing, Electrical, Painting
-          and Welding services across Bangalore.
+          From <span>carpentry</span> to electrical work, plumbing to painting —
+          we fix it right the first time. Serving all over India.
         </p>
         <div className="hero-buttons">
           <a href="#booking">
@@ -21,14 +21,14 @@ function Hero() {
               <span className="arrow">→</span>
             </button>
           </a>
-          <a href="tel:+919876543210">
+          <a href="tel:+918088618213">
             <button className="btn secondary-btn">Call Now</button>
           </a>
         </div>
         <div className="trust-badges">
-          <div className="badge">🛡️ Trusted Professionals</div>
-          <div className="badge">⚡ Fast Response</div>
-          <div className="badge">⭐ Quality Workmanship</div>
+          <div className="badge">🛡️ Trusted across India</div>
+          <div className="badge">⚡ Quick response times</div>
+          <div className="badge">⭐ Work done right</div>
         </div>
       </div>
       <div className="hero-image">

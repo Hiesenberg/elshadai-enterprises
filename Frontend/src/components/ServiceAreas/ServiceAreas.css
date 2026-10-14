@@ -1,0 +1,91 @@
+.service-areas {
+  padding: 80px 90px;
+  background: #fff;
+}
+
+.areas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.areas-header {
+  margin-bottom: 40px;
+}
+
+.map-icon {
+  font-size: 48px;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.areas-header h2 {
+  font-size: 38px;
+  color: #0F172A;
+  margin-bottom: 12px;
+}
+
+.areas-header p {
+  font-size: 18px;
+  color: #64748B;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.area-tag {
+  background: #F8FAFC;
+  border: 2px solid #E2E8F0;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #334155;
+  transition: all 0.3s ease;
+}
+
+.area-tag:hover {
+  background: #FFF8E1;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25);
+}
+
+.areas-note {
+  font-size: 15px;
+  color: #64748B;
+  font-style: italic;
+  margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+  .service-areas {
+    padding: 60px 20px;
+  }
+
+  .areas-header h2 {
+    font-size: 28px;
+  }
+
+  .areas-header p {
+    font-size: 16px;
+  }
+
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .area-tag {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  .map-icon {
+    font-size: 36px;
+  }
+}

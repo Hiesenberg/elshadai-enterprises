@@ -76,3 +76,26 @@ color .3s ease;
 
     border-radius:18px 18px 0 0;
 }
+
+.view-work {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .view-work {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-price {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 12px 0 0 0;
+}

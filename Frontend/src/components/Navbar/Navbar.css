@@ -47,7 +47,7 @@ position: relative;
 
 .book-btn{
     background-color: var(--accent);
-    color: var(--primary);
+    color: #0F172A;
     border: none;
     padding: 12px 24px;
     border-radius: 10px;

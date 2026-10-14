@@ -50,7 +50,7 @@ function Booking() {
 
       setIsSuccess(true);
       setStatusMessage(
-        "✅ Thank you! Your booking has been received. We'll contact you shortly."
+        "✅ Got it! We'll call you back within 24 hours."
       );
 
       setName("");
@@ -63,7 +63,7 @@ function Booking() {
       console.error("Network Error:", error);
 
       setIsSuccess(false);
-      setStatusMessage("❌ Unable to connect to the server.");
+      setStatusMessage("❌ Couldn't connect. Please try calling us instead.");
     } finally {
       setIsLoading(false);
     }
@@ -75,20 +75,20 @@ function Booking() {
 
         {/* Left Side */}
         <div className="booking-content">
-          <h2>Book Our Service</h2>
+          <h2>Get in Touch</h2>
 
           <p>
-            Looking for reliable home maintenance services?
-            Fill out the form and our team will contact you shortly.
+            Need something fixed? Fill out the form below and we'll
+            get back to you within 24 hours. Or just call us directly.
           </p>
 
           <div className="contact-info">
             <p>
-              <FaPhone /> +91 98765 43210
+              <FaPhone /> +91 8088618213
             </p>
 
             <p>
-              <FaEnvelope /> elshadaienterprises@gmail.com
+              <FaEnvelope /> rahulramya45@gmail.com
             </p>
 
             <p>
